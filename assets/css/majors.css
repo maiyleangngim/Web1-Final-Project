@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #1A2D5A;
+  padding: 20px 30px;
+}
+
+nav h2 {
+  color: white;
+  font-weight: 700;
+}
+
+/* MAIN */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+main h1 {
+  text-align: center;
+  color: #1A2D5A;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* SECTION */
+.major-field-section {
+  margin-bottom: 50px;
+}
+
+/* SECTION TITLE */
+.field-title {
+  font-size: 1.4rem;
+  color: #1A2D5A;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-number {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+/* GRID (like blog-grid) */
+.majors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD (adapted from blog-card) */
+.majors-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.majors-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* MAJOR TITLE */
+.majors-card h3 {
+  font-size: 1.1rem;
+  color: #1A2D5A;
+  margin-bottom: 12px;
+}
+
+/* UNIVERSITY LIST */
+.university-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* UNIVERSITY TAGS (clickable links) */
+.university-list a {
+  text-decoration: none;
+  background-color: #f0f2f5;
+  color: #1A2D5A;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.university-list a:hover {
+  background-color: #1A2D5A;
+  color: white;
+  border: 1px solid #1A2D5A;
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  .field-title {
+    font-size: 1.2rem;
+  }
+}
