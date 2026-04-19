@@ -13,8 +13,11 @@ body {
 
 /* NAVBAR */
 nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
   background-color: #1A2D5A;
-  padding: 20px 30px;
+  margin-bottom: 20px;
 }
 
 nav h2 {
@@ -111,7 +114,11 @@ main h1 {
   color: white;
   border: 1px solid #1A2D5A;
 }
-
+.university-list a:active {
+  background-color: green;
+  color: white;
+  border: 1px solid #1A2D5A;
+}
 /* MOBILE */
 @media screen and (max-width: 600px) {
   main h1 {
