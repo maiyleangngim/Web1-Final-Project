@@ -4,142 +4,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniKhmer</title>
-
+    <title>UniKhmer | Home</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
         <div class="nav-container">
-            <a href="./index.html"><img src="./assets/images/logo.png" class="logo"></a>
+            <a href="./index.html"><img src="./assets/images/logo.png" class="logo" alt="UniKhmer Logo"></a>
 
             <div class="nav-links">
-                <a href="./pages/explore.html">Explore</a>
-                <a href="./pages/about.html">About</a>
+                <a href="#explore-database-section">Explore</a>
+                <a href="#about-section">About</a>
+                <a href="#contact-section">Contact</a>
                 <i class="fa-solid fa-search"></i>
             </div>
 
             <div id="menu-btn" class="burger">
                 <i class="fa-solid fa-bars menu-icon"></i>
                 <div id="mobile-menu" class="mobile-menu">
-                    <a class="mobile-nav" href="#">Explore</a>
-                    <a class="mobile-nav" href="#">About</a>
+                    <a class="mobile-nav" href="#explore-database-section">Explore</a>
+                    <a class="mobile-nav" href="#about-section">About</a>
+                    <a class="mobile-nav" href="#contact-section">Contact</a>
                 </div>
             </div>
-
-
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-container">
+  <!-- HERO / CAROUSEL -->
+  <!-- hero carousel for major -->
+  <section>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
 
-            <div class="hero-text">
-                <h1>Find the right university and major for your future</h1>
-                <p>Navigate the Cambodian educational landscape with curated data, expert insights, and a community of high
-            achievers.</p>
-                <span><a href="#" class="btn">Get Started</a></span>
+      <!-- Indicators (dots) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- card 1 -->
+        <div class="carousel-item position-relative active">
+          <img src="https://i.pinimg.com/1200x/be/b5/cf/beb5cfc4013dd47ca07593a8d9bc4bb9.jpg"
+            class="d-block w-100 h-70">
+          <!-- Dark overlay -->
+          <div class="overlay"></div>
+          <!-- Caption -->
+          <div class="carousel-caption">
+            <h1>
+              <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Institute_of_Foreign_Languages.png"
+                style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="AUPP">
+              Institute of Foreign Languages
+            </h1>
+            <p> It is widely considered Cambodia's premier institution for degree-level language programs.</p>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="carousel-item position-relative">
+          <img src="https://i.pinimg.com/1200x/e9/bf/72/e9bf72e6153232310431cfcd279b188e.jpg" class="d-block w-100">
+          <!-- Dark overlay -->
+          <div class="overlay"></div>
+          <!-- Caption -->
+          <div class="carousel-caption">
+            <h1>
+              <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/RUPP_logo.PNG"
+                style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="AUPP">
+              Royal University of Phnom Penh
+            </h1>
+            <p>The Royal University of Phnom Penh (RUPP) is Cambodia's oldest and largest public university, founded in 1960.</p>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="carousel-item position-relative">
+
+          <!-- Image -->
+          <img src="https://www.aupp.edu.kh/wp-content/uploads/Students-Life.jpg" class="d-block w-100">
+
+          <!-- Dark overlay -->
+          <div class="overlay"></div>
+
+          <!-- Caption -->
+          <div class="carousel-caption">
+            <h1>
+              <img src="https://upload.wikimedia.org/wikipedia/en/9/98/AUPP_Logo.png"
+                style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="AUPP">
+              American University of Phnom Penh
+            </h1>
+            <p>A private international university in Cambodia offering U.S. style higher education.</p>
+          </div>
+
+        </div>
+
+        <!-- card 4 -->
+        <div class="carousel-item position-relative">
+          <img src="https://cadt.edu.kh/wp-content/uploads/2025/08/IMG_4219-copy-scaled.webp" class="d-block w-100">
+          <!-- Dark overlay -->
+          <div class="overlay"></div>
+          <!-- Caption -->
+          <div class="carousel-caption">
+            <h1>
+              <img src="https://www.idt.edu.kh/wp-content/uploads/2025/09/cropped-images.png"
+                style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="AUPP">
+              Cambodia Academy of Digital Technology
+            </h1>
+            <p>Cambodia's national flagship public institution for digital education, research, and innovation, under the Ministry of Post and Telecommunications. </p>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="carousel-item position-relative">
+          <img src="https://schoolscambodia.com/wp-content/uploads/2024/12/Paragon-University-1-1024x576.jpg"
+            class="d-block w-100">
+
+          <!-- Dark overlay -->
+          <div class="overlay"></div>
+          <!-- Caption -->
+          <div class="carousel-caption">
+            <h1>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWWPeF3i0IrefVvKWTWwgtQoHCEKNup4C8A&s"
+                style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="AUPP">
+              Paragon International University
+            </h1>
+            <p>a leading private university in Cambodia known for English-language instruction and high-quality education.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls (arrows) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+  </section>
+
+    <section class="find-uni-section">
+        <div class="container">
+            <h2>Find University</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for universities...">
+                <button class="btn">Search</button>
             </div>
-
-            <div class="hero-img">
-                <img
-                    src="https://img.freepik.com/premium-photo/3d-cartoon-graduates-robes-stride-confidently-towards-hightech-future-symbolizing-readines_950002-292408.jpg">
-            </div>
-
         </div>
     </section>
 
-    <!-- Top UNIVERSITIES -->
     <section class="section">
         <div class="container">
             <h2>Top Rated Universities</h2>
-
             <div class="grid">
-
-                <!-- CARD -->
                 <div class="card">
-                    <img src="https://i.pinimg.com/1200x/e9/bf/72/e9bf72e6153232310431cfcd279b188e.jpg">
-
+                    <img src="https://i.pinimg.com/1200x/e9/bf/72/e9bf72e6153232310431cfcd279b188e.jpg" class="card-img">
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/RUPP_logo.PNG" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
-                            Royal University of Phnom Penh</h3>
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/RUPP_logo.PNG" class="uni-logo">
+                            Royal University of Phnom Penh
+                        </h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
-
                         <div class="tags">
                             <span class="tag yellow">Top ranked</span>
                             <span class="tag blue">Public</span>
                         </div>
-
-                        <p class="desc">
-                            One of Cambodia's leading universities offering diverse programs.
-                        </p>
+                        <p class="desc">One of Cambodia's leading universities offering diverse programs.</p>
                     </div>
                 </div>
 
-                <!-- CARD -->
                 <div class="card">
-                    <img
-                        src="https://rupp.edu.kh/ifl/english/image_banner/img_ifl_doe.jpg">
-
+                    <img src="https://rupp.edu.kh/ifl/english/image_banner/img_ifl_doe.jpg" class="card-img">
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Institute_of_Foreign_Languages.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
-                            Institute of Foreign Languages</h3>
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Institute_of_Foreign_Languages.png" class="uni-logo">
+                            Institute of Foreign Languages
+                        </h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
-
                         <div class="tags">
                             <span class="tag yellow">Top ranked</span>
                             <span class="tag blue">Public</span>
                         </div>
-
-                        <p class="desc">
-                            It is widely considered Cambodia's premier institution for degree-level language programs.
-                        </p>
+                        <p class="desc">Cambodia's premier institution for degree-level language programs.</p>
                     </div>
                 </div>
 
-                <!-- CARD -->
                 <div class="card">
-                    <img src="https://www.aupp.edu.kh/wp-content/uploads/Students-Life.jpg">
-
+                    <img src="https://www.aupp.edu.kh/wp-content/uploads/Students-Life.jpg" class="card-img">
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/9/98/AUPP_Logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
-                            American University of Phnom Penh</h3>
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/9/98/AUPP_Logo.png" class="uni-logo">
+                            American University of Phnom Penh
+                        </h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
-
                         <div class="tags">
                             <span class="tag blue">International</span>
                         </div>
-
-                        <p class="desc">
-                            Private university offering American-style education.
-                        </p>
+                        <p class="desc">Private university offering American-style education.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- Public UNIVERSITIES -->
+        <!-- Public UNIVERSITIES -->
     <section class="section">
         <div class="container">
-            <h2>Publice Universities</h2>
+            <h2>Public Universities</h2>
 
             <div class="grid">
                 <!-- CARD -->
                 <div class="card">
-                    <img src="https://i.pinimg.com/1200x/e9/bf/72/e9bf72e6153232310431cfcd279b188e.jpg">
+                    <img src="https://i.pinimg.com/1200x/e9/bf/72/e9bf72e6153232310431cfcd279b188e.jpg" class="card-img">
 
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/RUPP_logo.PNG" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/RUPP_logo.PNG" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="" class="uni-logo">
                             Royal University of Phnom Penh</h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
 
@@ -156,11 +246,12 @@
 
                 <!-- CARD -->
                 <div class="card">
-                    <img src="https://numer.digital/public/faculties/MainSlide/num_front.jpg">
+                    <img src="https://numer.digital/public/faculties/MainSlide/num_front.jpg" class="card-img">
 
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Institute_of_Technology_of_Cambodia_logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Institute_of_Technology_of_Cambodia_logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="" class="uni-logo">
+                             Institute of Technology of Cambodia</h3>
                             National University of Management</h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
 
@@ -178,12 +269,12 @@
                 <!-- CARD -->
                 <div class="card">
                     <img
-                        src="https://academics-bucket-sj19asxm-prod.s3.ap-southeast-1.amazonaws.com/2387b0ec-4da2-4220-9710-18cd86536da3/feature-image.jpg">
+                        src="https://academics-bucket-sj19asxm-prod.s3.ap-southeast-1.amazonaws.com/2387b0ec-4da2-4220-9710-18cd86536da3/feature-image.jpg" class="card-img">
 
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/National_University_of_Cambodia_logo.png/250px-National_University_of_Cambodia_logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
-                            Royal University of Phnom Penh</h3>
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/National_University_of_Cambodia_logo.png/250px-National_University_of_Cambodia_logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="" class="uni-logo">
+                            National University of Cambodia</h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
 
                         <div class="tags">
@@ -196,9 +287,6 @@
                         </p>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </section>
@@ -212,11 +300,11 @@
 
                 <!-- CARD -->
                 <div class="card">
-                    <img src="https://schoolscambodia.com/wp-content/uploads/2024/12/Paragon-University-1-1024x576.jpg">
+                    <img src="https://schoolscambodia.com/wp-content/uploads/2024/12/Paragon-University-1-1024x576.jpg" class="card-img">
 
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWWPeF3i0IrefVvKWTWwgtQoHCEKNup4C8A&s" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
+                        <h3 class="card-title">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWWPeF3i0IrefVvKWTWwgtQoHCEKNup4C8A&s" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="" class="uni-logo">
                             Paragon International University</h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
 
@@ -234,11 +322,11 @@
                 <!-- CARD -->
                 <div class="card">
                     <img
-                        src="https://cadt.edu.kh/wp-content/uploads/2025/08/IMG_4219-copy-scaled.webp">
+                        src="https://cadt.edu.kh/wp-content/uploads/2025/08/IMG_4219-copy-scaled.webp" class="card-img">
 
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://www.idt.edu.kh/wp-content/uploads/2025/09/cropped-images.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
+                        <h3 class="card-title">
+                            <img src="https://www.idt.edu.kh/wp-content/uploads/2025/09/cropped-images.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="" class="uni-logo">
                             Cambodia Academy of Digital Technology</h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
 
@@ -255,11 +343,11 @@
 
                 <!-- CARD -->
                 <div class="card">
-                    <img src="https://www.aupp.edu.kh/wp-content/uploads/Students-Life.jpg">
+                    <img src="https://www.aupp.edu.kh/wp-content/uploads/Students-Life.jpg" class="card-img">
 
                     <div class="card-body">
-                        <h3 style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/National_University_of_Cambodia_logo.png/250px-National_University_of_Cambodia_logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="">
+                        <h3 class="card-title">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/National_University_of_Cambodia_logo.png/250px-National_University_of_Cambodia_logo.png" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;" alt="" class="uni-logo">
                             Royal University of Phnom Penh</h3>
                         <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
 
@@ -276,35 +364,104 @@
             </div>
         </div>
     </section>
+    <section id="explore-database-section" class="section explore-database-section">
+        <div class="container">
+            <h2>Explore Our Database</h2>
+            <div class="grid explore-grid">
+                <a href="./pages/university.html" class="explore-link">
+                    <div class="card explore-card">
+                        <i class="fa-solid fa-building-columns icon-large"></i>
+                        <h3>Explore Universities</h3>
+                        <p>Browse through public and private institutions across Cambodia.</p>
+                    </div>
+                </a>
+                <a href="./pages/major.html" class="explore-link">
+                    <div class="card explore-card">
+                        <i class="fa-solid fa-graduation-cap icon-large"></i>
+                        <h3>Explore Majors</h3>
+                        <p>Find the right field of study based on your interests and goals.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
+    <section id="about-section" class="about-container section bg-light">
+        <div class="container">
+            <h2 class="text-center">About Our Platform</h2>
+            <div class="grid about-grid">
+                <div class="about-card">
+                    <h3>Who We Are</h3>
+                    <p>We help students explore universities in Cambodia by providing accurate information to support better decisions.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>To simplify university selection through organized and user-friendly data.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Why Choose Us</h3>
+                    <p>✔ Easy to use <br> ✔ Modern design <br> ✔ Reliable information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="contact-section section">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📞 Phone: +855 92 914 678</p>
+                    <p>💬 Telegram: @UniKhmer</p>
+                    <a href="https://t.me/sengsereysolida" target="_blank" class="telegram-btn">Message on Telegram</a>
+                </div>
+                <form class="contact-form">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                    <label>Message</label>
+                    <textarea placeholder="Write your message..." required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+    <div class="container">
+        <h2 class="text-center">Explore higher education in Cambodia</h2>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dNDJt3dh-7k?si=jlpi9vDD54tBOjni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
     <footer class="footer">
         <div class="container footer-grid">
-
-            <div>
-                <img src="./assets/images/logo.png" class="logo">
+            <div class="footer-brand">
+                <img src="./assets/images/logo.png" class="logo" alt="UniKhmer Logo">
                 <p>support@UniKhmer.com</p>
             </div>
-
-            <div>
+            <div class="footer-links">
                 <h4>Quick Links</h4>
                 <a href="#">Home</a>
-                <a href="#">Explore</a>
+                <a href="#explore-database-section">Explore</a>
             </div>
-
-            <div>
+            <div class="footer-support">
                 <h4>Support</h4>
-                <a href="#">FAQs</a>
-                <a href="#">Contact</a>
+                <a href="#about-section">About</a>
+                <a href="#contact-section">Contact</a>
             </div>
-
         </div>
-
         <hr>
         <p class="copyright">© 2026 UniKhmer</p>
     </footer>
 
     <script src="./assets/js/toggleDropMenu.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+
+</body>
 </html>
