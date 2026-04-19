@@ -73,7 +73,7 @@ body {
 }
 
 .logo {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -103,6 +103,58 @@ body {
     display: none;
     color: var(--text-light);
     font-size: 1.5rem;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  padding: 20px 10px;
+
+  /* hidden state */
+  opacity: 0;
+  transform: translateY(-15px);
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+.mobile-nav{
+  padding: 12px;
+  text-decoration: none;
+  color:black;
+  /* border-radius: 10px; */
+}
+
+.mobile-nav:hover{
+  background-color: rgb(71, 71, 236);
+  color: white;
+}
+
+/* ACTIVE */
+.mobile-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
 }
 
 
