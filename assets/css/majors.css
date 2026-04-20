@@ -156,6 +156,10 @@ main h1 {
   background-color: #0f1e3d;
   color: white;
 }
+.university-list a:visited{
+  background-color: #1A2D5A;
+  color: white;
+}
 
 /* MOBILE */
 @media screen and (max-width: 680px) {
