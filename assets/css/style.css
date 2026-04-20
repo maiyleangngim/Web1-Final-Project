@@ -135,9 +135,15 @@ body {
 .navbar{
   display: flex;
   align-items: center;
-  padding: 30px 20px;
-  background-color: #1A2D5A;
+  justify-content: space-between;
+  padding: 30px 8%;
+  background-color: #002d5b;
   margin-bottom: 20px;
+  backdrop-filter: blur(10px); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .brand {

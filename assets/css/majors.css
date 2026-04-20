@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 8%;
+    padding: 30px 8%;
     background: #002d5b;
     backdrop-filter: blur(10px); 
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -24,9 +24,19 @@ nav {
     top: 0;
     z-index: 100;
 }
-
-.logo {
-  height: 50px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.brand img {
+  height: 40px;
+  width:40px;
+}
+.brand span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* MAIN */

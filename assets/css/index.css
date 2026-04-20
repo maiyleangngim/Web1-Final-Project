@@ -48,16 +48,11 @@ body {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px !important; 
-    padding-bottom: 30px !important;
-    padding-left: 8% !important;
-    padding-right: 8% !important;
-    
+    padding:30px 8!important;    
     background-color: #002d5b !important;
     height: auto !important;
-    min-height: 100px; 
-    
-    position: fixed !important;
+    min-height: 100px;    
+    position: fixed!important;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -72,11 +67,24 @@ body {
     margin: 0 auto;
 }
 
-.logo {
-    height: 50px;
-    width: auto;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
+.brand img {
+  height: 40px;
+  width:40px;
+}
+.brand span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer-brand img{
+  height: 40px;
+  width:40px;
+}
 .nav-links {
     display: flex;
     align-items: center;
