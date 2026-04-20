@@ -170,7 +170,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 50px;
     overflow: hidden;
-    background: var(--bg-white)
+    background: var(--bg-white);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
