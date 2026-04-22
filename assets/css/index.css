@@ -535,6 +535,9 @@ body {
   height: 80vh;
   object-fit: cover;
 }
+/* =========================
+   TABLETS (≤992px)
+========================= */
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
     .hero-container, .contact-card {
@@ -555,7 +558,14 @@ body {
         color: var(--text-light);
         line-height: 1.3;
     }
+    .contact-right {
+        order: -1;
+        /* move map/info above form if you want */
+    }
 }
+/* =========================
+   MOBILE (≤768px)
+========================= */
 
 @media (max-width: 768px) {
     .nav-links {
@@ -563,6 +573,29 @@ body {
     }
     .burger {
         display: block;
+    }
+    .nav-container {
+        padding: 0px 20px;
+    }
+    /* SECTION SPACING */
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+    /* TEXT SCALE */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
     .footer-grid {
         grid-template-columns: 1fr;
@@ -598,6 +631,41 @@ body {
         max-width: 100%;
         text-align: center;
     }
+}
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+
+    .nav-container {
+        padding: 0px 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .info-item p {
+        font-size: 13px;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.3rem !important;
+    }
+
+
+
 }
 
 
