@@ -372,3 +372,8 @@ tbody tr:hover {
     .nav-links { gap: 20px; }
 }
 
+
+.brand img{
+    width: 90;
+    height: 90;
+}
