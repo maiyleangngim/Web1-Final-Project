@@ -17,7 +17,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 30px 8%;
-    background: #002d5b;
+    background: #1A2D5A;
     backdrop-filter: blur(10px); 
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     position: sticky;
@@ -28,6 +28,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
 }
 .brand img {
   height: 60px;
@@ -42,6 +43,31 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* SEARCH SECTION */
+.find-major-section{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.search-bar{
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+  background: var(--bg-white);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.search-bar input{
+  flex: 1;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+
 }
 
 /* MAIN */
@@ -214,7 +240,7 @@ main h1 {
 .footer-brand img{
   height: 60px;
   width: 60px;
-  background-color:transparent;
+  /* background-color:transparent; */
 }
 
 .copyright {

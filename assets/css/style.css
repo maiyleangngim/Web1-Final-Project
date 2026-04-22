@@ -31,6 +31,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
 }
 
 .brand img {
@@ -178,7 +179,7 @@ body {
 .footer-brand img{
   height: 60px!important;
   width: 60px!important;
-  background-color:transparent;
+  /* background-color:transparent; */
 }
 
 .copyright {
