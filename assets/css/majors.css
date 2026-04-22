@@ -175,15 +175,6 @@ main h1 {
   background-color: #1A2D5A;
   color: white;
 }
-
-/* MOBILE */
-@media screen and (max-width: 768px) {
-  nav { padding: 25px 20px; }
-  main { padding: 32px 16px 60px; }
-  main h1 { font-size: 1.8rem; }
-  .majors-grid { grid-template-columns: 1fr; }
-  .field-title { font-size: 0.9rem; }
-}
 /* --- FOOTER --- */
 .footer {
     background-color: #1A2D5A;
@@ -230,4 +221,15 @@ main h1 {
     text-align: center;
     font-size: 0.85rem;
     color: #fff;
+}
+/* MOBILE Responsive */
+@media screen and (max-width: 768px) {
+  nav { padding: 25px 20px; }
+  main { padding: 32px 16px 60px; }
+  main h1 { font-size: 1.8rem; }
+  .majors-grid { grid-template-columns: 1fr; }
+  .field-title { font-size: 0.9rem; }
+  .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }
